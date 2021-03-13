@@ -1,0 +1,1083 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>改进版小米商城</title>
+</head>
+<!-- 引入CSS文件 -->
+ <link rel = 'stylesheet' href="praindex.css" />
+ <!-- 调用动画函数   -->
+ <script src="animate.js"></script>
+ <!-- 倒计时函数 -->
+ <script src="countDown.js"></script>
+ <!-- 引入JS文件 -->
+ <script src="praindex.js"></script>
+ <style>
+     @font-face {
+  font-family: 'iconfont';
+  src: url('fonts/iconfont.eot');
+  src: url('fonts/iconfont.eot?#iefix') format('embedded-opentype'),
+      url('fonts/iconfont.woff2') format('woff2'),
+      url('fonts/iconfont.woff') format('woff'),
+      url('fonts/iconfont.ttf') format('truetype'),
+      url('fonts/iconfont.svg#iconfont') format('svg');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;  /* 引用时复制这个就可以了 */
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+ </style>
+ 
+<body>
+    <div class = "header width1263">
+        <div class="topbarBannerWrapper width1263"><img src="imge/topbar.jpg" alt="topbar" class="img100"></div>
+        <div class="site-topbar width1263">
+            <div class="head_container_left">  
+                <a href="#" class="header_font" >小米商城</a><span class="partition">|</span>
+                <a href="#" class="header_font">MIUI</a><span class="partition ">|</span>
+                <a href="#" class="header_font">IoT</a><span class="partition ">|</span>
+                <a href="#" class="header_font">云服务</a><span class="partition">|</span>
+                <a href="#" class="header_font">天星数科</a><span class="partition">|</span>
+                <a href="#" class="header_font">有品</a><span class="partition">|</span>
+                <a href="#" class="header_font">小爱开放平台</a><span class="partition">|</span>
+                <a href="#" class="header_font">企业团购</a><span class="partition ">|</span>
+                <a href="#" class="header_font">资质证照</a><span class="partition ">|</span>
+                <a href="#" class="header_font">协议规则</a><span class="partition">|</span>
+                <a href="#" class="header_font downloadAAP">下载app
+                    <span class="triangle"></span>
+                    <!-- hover运行不了 -->
+                    <span class="appCode">
+                        <img src="imge/miQRcode.png" height="100%" width="100%">
+                    </span>
+                </a><span class="partition ">|</span>
+                <a href="#" class="header_font">智能生活</a><span class="partition ">|</span>
+                <a href="#" class="header_font">Select Location</a>    
+            </div>
+            <div class="login">     
+                <a href="#" class="header_font">登录</a><span class="partition">|</span>
+                <a href="#" class="header_font">注册</a><span class="partition">|</span>
+                <a href="#" class="header_font">消息通知</a>
+            </div>
+            <div class="shopbox header_font"><span class="iconfont">&#xe61e</span> 购物车</div>
+         </div>    
+        <div class="site-header width1263">
+            <div class="width1227">
+                <div class="logo"><img src="imge/home1.jpg" alt=""></div>
+                <div class="head-nav">
+                <ul>
+                    <li><span>小米手机</span></li>
+                    <li>
+                        <span>Redmi 红米</span>
+                        <div class="subnav">
+                            <div class="nav_item_con con_width">
+								<ul>
+									<li>
+										<label>新品</label>
+										<a href="#" class="nav_item_con_img">
+											<img src="imge/note3-80-2.png" width="20px" height="57px"/>
+										</a>
+										<a href="#" class="nav_item_con_name">小米8</a>
+										<p>2699元起</p>
+									</li>
+									<li>
+										<label>新品</label>
+										<a href="#" class="nav_item_con_img">
+											<img src="imge/note3-80-2.png" width="20px" height="57px" />
+										</a>
+										<a href="#" class="nav_item_con_name">小米8</a>
+										<p>2699元起</p>
+									</li>
+									<li>
+										<label>新品</label>
+										<a href="#" class="nav_item_con_img">
+											<img src="imge/note3-80-2.png" width="20px" height="57px" />
+										</a>
+										<a href="#" class="nav_item_con_name">小米8</a>
+										<p>2699元起</p>
+									</li>
+									<li>
+										<label>新品</label>
+										<a href="#" class="nav_item_con_img">
+											<img src="imge/note3-80-2.png" width="20px" height="57px" />
+										</a>
+										<a href="#" class="nav_item_con_name">小米8</a>
+										<p>2699元起</p>
+									</li>
+									<li>
+										<label>新品</label>
+										<a href="#" class="nav_item_con_img">
+											<img src="imge/note3-80-2.png" width="20px" height="57px" />
+										</a>
+										<a href="#" class="nav_item_con_name">小米8</a>
+										<p>2699元起</p>
+									</li>
+									<li>
+										<label>新品</label>
+										<a href="#" class="nav_item_con_img">
+											<img src="imge/note3-80-2.png" width="20px" height="57px" />
+										</a>
+										<a href="#" class="nav_item_con_name">小米8</a>
+										<p>2699元起</p>
+									</li>
+								</ul>
+							</div>
+                        </div>
+                        
+                    </li>
+                    <li><span>电视</span></li>
+                    <li>
+                        <span>笔记本</span>
+                        <div class="subnav">
+                            <div class="nav_item_con con_width">
+								<ul>
+									<li>
+										<label>新品</label>
+										<a href="#" class="nav_item_con_img">
+											<img src="imge/note3-80-2.png" width="20px" height="57px"/>
+										</a>
+										<a href="#" class="nav_item_con_name">小米8</a>
+										<p>2699元起</p>
+									</li>
+									<li>
+										<label>新品</label>
+										<a href="#" class="nav_item_con_img">
+											<img src="imge/note3-80-2.png" width="20px" height="57px" />
+										</a>
+										<a href="#" class="nav_item_con_name">小米8</a>
+										<p>2699元起</p>
+									</li>
+									<li>
+										<label>新品</label>
+										<a href="#" class="nav_item_con_img">
+											<img src="imge/note3-80-2.png" width="20px" height="57px" />
+										</a>
+										<a href="#" class="nav_item_con_name">小米8</a>
+										<p>2699元起</p>
+									</li>
+									<li>
+										<label>新品</label>
+										<a href="#" class="nav_item_con_img">
+											<img src="imge/note3-80-2.png" width="20px" height="57px" />
+										</a>
+										<a href="#" class="nav_item_con_name">小米8</a>
+										<p>2699元起</p>
+									</li>
+									<li>
+										<label>新品</label>
+										<a href="#" class="nav_item_con_img">
+											<img src="imge/note3-80-2.png" width="20px" height="57px" />
+										</a>
+										<a href="#" class="nav_item_con_name">小米8</a>
+										<p>2699元起</p>
+									</li>
+									<li>
+										<label>新品</label>
+										<a href="#" class="nav_item_con_img">
+											<img src="imge/note3-80-2.png" width="20px" height="57px" />
+										</a>
+										<a href="#" class="nav_item_con_name">小米8</a>
+										<p>2699元起</p>
+									</li>
+								</ul>
+							</div>
+                        </div>
+                    </li>
+                    <li><span>家电</span></li>
+                    <li>
+                        <span>路由器</span>
+                        <div class="subnav">
+                            <div class="nav_item_con con_width">
+								<ul>
+									<li>
+										<label>新品</label>
+										<a href="#" class="nav_item_con_img">
+											<img src="imge/note3-80-2.png" width="20px" height="57px"/>
+										</a>
+										<a href="#" class="nav_item_con_name">小米8</a>
+										<p>2699元起</p>
+									</li>
+									<li>
+										<label>新品</label>
+										<a href="#" class="nav_item_con_img">
+											<img src="imge/note3-80-2.png" width="20px" height="57px" />
+										</a>
+										<a href="#" class="nav_item_con_name">小米8</a>
+										<p>2699元起</p>
+									</li>
+									<li>
+										<label>新品</label>
+										<a href="#" class="nav_item_con_img">
+											<img src="imge/note3-80-2.png" width="20px" height="57px" />
+										</a>
+										<a href="#" class="nav_item_con_name">小米8</a>
+										<p>2699元起</p>
+									</li>
+									<li>
+										<label>新品</label>
+										<a href="#" class="nav_item_con_img">
+											<img src="imge/note3-80-2.png" width="20px" height="57px" />
+										</a>
+										<a href="#" class="nav_item_con_name">小米8</a>
+										<p>2699元起</p>
+									</li>
+									<li>
+										<label>新品</label>
+										<a href="#" class="nav_item_con_img">
+											<img src="imge/note3-80-2.png" width="20px" height="57px" />
+										</a>
+										<a href="#" class="nav_item_con_name">小米8</a>
+										<p>2699元起</p>
+									</li>
+									<li>
+										<label>新品</label>
+										<a href="#" class="nav_item_con_img">
+											<img src="imge/note3-80-2.png" width="20px" height="57px" />
+										</a>
+										<a href="#" class="nav_item_con_name">小米8</a>
+										<p>2699元起</p>
+									</li>
+								</ul>
+							</div>
+                        </div>
+                    </li>
+                    <li><span>智能硬件</span></li>
+                    <li><span><a href="#">服务</a></span></li>
+                    <li><span><a href="#">社区</a></span></li>
+                </ul>
+                </div>
+                <div class="searchbox">
+                    <input type="search" placeholder="【老人机首选】Remi 9A" class="search">
+                    <button>
+                        <span class="iconfont">&#xe602</span >
+                    </button>
+                </div>
+                <div class="navSide">
+                    <ul>
+                        <li>
+                            <a href="#">手机&nbsp电话卡</a>
+                            <div class="menuList"></div>
+                        </li>
+                        <li>
+                            <a href="#">电视&nbsp盒子</a>
+                            <div class="menuList"></div>
+                        </li>
+                        <li>
+                            <a href="#">笔记本&nbsp显示器</a>
+                            <div class="menuList"></div>
+                        </li>
+                        <li>
+                            <a href="#">家电&nbsp插电板</a>
+                            <div class="menuList"></div>
+                        </li>
+                        <li>
+                            <a href="#">出行&nbsp穿戴</a>
+                            <div class="menuList"></div>
+                        </li>
+                        <li>
+                            <a href="#">智能&nbsp路由器</a>
+                            <div class="menuList"></div>
+                        </li>
+                        <li>
+                            <a href="#">电源&nbsp配件</a>
+                            <div class="menuList"></div>
+                        </li>
+                        <li>
+                            <a href="#">健康&nbsp儿童</a>
+                            <div class="menuList"></div>
+                        </li>
+                        <li>
+                            <a href="#">耳机&nbsp音箱</a>
+                            <div class="menuList"></div>
+                        </li>
+                        <li>
+                            <a href="#">生活&nbsp箱包</a>
+                            <div class="menuList"></div>
+                        </li>
+                    </ul>
+                </div>     
+            </div>
+        </div>
+    </div>
+    <div class = "homecontainer width1227">
+        <!-- 轮播图 -->
+        <div class="navPic">
+            <!-- 图片的轮播 -->
+            <ul>
+                <li><a href="#"><img src="imge/rollPic1.jpg" height="100%" width="1227px"></a></li>
+                <li><a href="#"><img src="imge/rollPic2.jpg" height="100%" width="1227px"></a></li>
+                <li><a href="#"><img src="imge/rollPic3.jpg" height="100%" width="1227px"></a></li>
+            </ul> 
+            <!-- 左右箭头  -->
+            <div class="bannerLeftArrow">
+                <span class="iconfont">&#xe62a</span>
+            </div>
+            <div class="bannerRightArrow">
+                <span class="iconfont">&#xe62f</span>
+            </div>
+            <!-- 底下小圆点 --> 
+            <div class="slideList">
+                <ol>   
+                </ol>
+            </div>
+             
+        </div>  
+        <div class="navleft">
+            <ul>
+                <li><a href="#"><span class="iconfont">&#xe60b</span></a></li>
+                <li><a href="#"><span class="iconfont">&#xe60b</span></a></a></li>
+                <li><a href="#"><span class="iconfont">&#xe60b</span></a></a></li>
+                <li><a href="#"><span class="iconfont">&#xe60b</span></a></a></li>
+                <li><a href="#"><span class="iconfont">&#xe60b</span></a></a></li>
+                <li><a href="#"><span class="iconfont">&#xe60b</span></a></a></li>
+            </ul>
+        </div>
+        <div class="navRightPic">
+            <ul>
+                <li><img src="imge/Remi9A.jpg" height="100%" width="100%"></li>
+                <li><img src="imge/Redmi10x.jpg" height="100%" width="100%"></li>
+                <li><img src="imge/watch.jpg" height="100%" width="100%"></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container ">
+        <div class = "width1227">
+            <h2>小米秒杀
+                <div class="Arrow"><span class="iconfont">&#xe62f</span></div>
+                <div class="Arrow"><span class="iconfont">&#xe62a</span></div> 
+            </h2>
+            <span class="timerandsilde">
+                <div id="timer">
+                    <span>14:00 &nbsp;场</span> 
+                    <div class="thunder"><img src="imge/thunder.jpg" height="53px" width="50px" ></div>
+                    <div id="desc">距离结束还有</div>
+                    <div class="alarm">
+                        <div class="timebox">03</div><span class="partitionTb">:</span>
+                        <div class="timebox">00</div><span class="partitionTb">:</span>
+                        <div class="timebox">02</div>
+                    </div>
+                    
+                    
+                </div>
+                <div class="slide">
+                    <ul>
+                        <li>
+                            <div class="exbPic">
+                                <img src="imge/evbicc.jpg" height="100%" width="100%"  >
+                            </div>
+                            <h3>小米路由器 黑色</h3>
+                            <p class="ad">小而精致，精简出行</p>
+                            <div class="price"><div class="priceNum">59元</div><del>69元</del></div>     
+                        </li>
+                        <li>
+                            <div class="exbPic">
+                                <img src="imge/evbicc.jpg" height="100%" width="100%"  >
+                            </div>
+                            <h3>小米路由器 黑色</h3>
+                            <p class="ad">小而精致，精简出行</p>
+                            <div class="price"><div class="priceNum">59元</div><del>69元</del></div>
+                        </li>
+                        <li>
+                            <div class="exbPic">
+                                <img src="imge/evbicc.jpg" height="100%" width="100%"  >
+                            </div>
+                            <h3>小米路由器 黑色</h3>
+                            <p class="ad">小而精致，精简出行</p>
+                            <div class="price"><div class="priceNum">59元</div><del>69元</del></div>
+                        </li>
+                        <li><div class="exbPic">
+                            <img src="imge/evbicc.jpg" height="100%" width="100%"  >
+                        </div>
+                        <h3>小米路由器 黑色</h3>
+                        <p class="ad">小而精致，精简出行</p>
+                        <div class="price"><div class="priceNum">59元</div><del>69元</del></div></li>
+                    </ul>
+                </div>
+            </span>
+            <div class="bannerPic"><img src="imge/phonebanner.jpg" height="100%" width="100%"></div>
+            <!-- 手机 -->
+            <h2>手机
+                <div class="Arrow"><span class="iconfont">&#xe62f</span></div>
+                <div class="Arrow"><span class="iconfont">&#xe62a</span></div> 
+            </h2>
+            <span class="ybigPic"><img src="imge/ybigpic.jpg" width="100%" height="100%"></span>
+            <span class="productPics">
+                <ul>
+                    <li>
+                        <div class="exbPic">
+                            <img src="imge/evbicc.jpg" height="100%" width="100%"  >
+                        </div>
+                        <h3>小米路由器 黑色</h3>
+                        <p class="ad">小而精致，精简出行</p>
+                        <div class="price"><div class="priceNum">59元</div><del>69元</del></div>     
+                    </li>
+                    <li>
+                        <div class="exbPic">
+                            <img src="imge/evbicc.jpg" height="100%" width="100%"  >
+                        </div>
+                        <h3>小米路由器 黑色</h3>
+                        <p class="ad">小而精致，精简出行</p>
+                        <div class="price"><div class="priceNum">59元</div><del>69元</del></div>
+                    </li>
+                    <li><div class="exbPic">
+                            <img src="imge/evbicc.jpg" height="100%" width="100%"  >
+                        </div>
+                        <h3>小米路由器 黑色</h3>
+                        <p class="ad">小而精致，精简出行</p>
+                        <div class="price"><div class="priceNum">59元</div><del>69元</del></div>
+                    </li>
+                    <li>
+                        <div class="exbPic">
+                            <img src="imge/evbicc.jpg" height="100%" width="100%"  >
+                        </div>
+                        <h3>小米路由器 黑色</h3>
+                        <p class="ad">小而精致，精简出行</p>
+                        <div class="price"><div class="priceNum">59元</div><del>69元</del></div>
+                    </li>
+                    <li>
+                        <div class="exbPic">
+                            <img src="imge/evbicc.jpg" height="100%" width="100%"  >
+                        </div>
+                        <h3>小米路由器 黑色</h3>
+                        <p class="ad">小而精致，精简出行</p>
+                        <div class="price"><div class="priceNum">59元</div><del>69元</del></div>
+                    </li>
+                    <li>
+                        <div class="exbPic">
+                            <img src="imge/evbicc.jpg" height="100%" width="100%"  >
+                        </div>
+                        <h3>小米路由器 黑色</h3>
+                        <p class="ad">小而精致，精简出行</p>
+                        <div class="price"><div class="priceNum">59元</div><del>69元</del></div>
+                    </li>
+                    <li>
+                        <div class="exbPic">
+                            <img src="imge/evbicc.jpg" height="100%" width="100%"  >
+                        </div>
+                        <h3>小米路由器 黑色</h3>
+                        <p class="ad">小而精致，精简出行</p>
+                        <div class="price"><div class="priceNum">59元</div><del>69元</del></div>
+                    </li>
+                    <li>
+                        <div class="exbPic">
+                            <img src="imge/evbicc.jpg" height="100%" width="100%"  >
+                        </div>
+                        <h3>小米路由器 黑色</h3>
+                        <p class="ad">小而精致，精简出行</p>
+                        <div class="price"><div class="priceNum">59元</div><del>69元</del></div>
+                    </li>
+                </ul>
+            </span>
+            <div class="bannerPic"><img src="imge/thirdbar.jpg" height="100%" width="100%"></div>
+            <!-- 家电 -->
+            <h2>家电
+                <div class="Arrow"><span class="iconfont">&#xe62f</span></div>
+                <div class="Arrow"><span class="iconfont">&#xe62a</span></div> 
+            </h2>
+            <span class="ybigPic">
+                <li>
+                    <img src="imge/RedmiTV.jpg" height="100%" width="100%"  >
+                </li>
+                <li>
+                     <img src="imge/xiaomiTV.jpg" height="100%" width="100%"  >
+                </li>
+               
+            </span>
+            <span class="productPics">
+                <ul>
+                    <li>
+                        <div class="exbPic">
+                            <img src="imge/evbicc.jpg" height="100%" width="100%"  >
+                        </div>
+                        <h3>小米路由器 黑色</h3>
+                        <p class="ad">小而精致，精简出行</p>
+                        <div class="price"><div class="priceNum">59元</div><del>69元</del></div>
+                    </li>
+                    <li>
+                        <div class="exbPic">
+                            <img src="imge/evbicc.jpg" height="100%" width="100%"  >
+                        </div>
+                        <h3>小米路由器 黑色</h3>
+                        <p class="ad">小而精致，精简出行</p>
+                        <div class="price"><div class="priceNum">59元</div><del>69元</del></div>
+                    </li>
+                    <li>
+                        <div class="exbPic">
+                            <img src="imge/evbicc.jpg" height="100%" width="100%"  >
+                        </div>
+                        <h3>小米路由器 黑色</h3>
+                        <p class="ad">小而精致，精简出行</p>
+                        <div class="price"><div class="priceNum">59元</div><del>69元</del></div>
+                    </li>
+                    <li>
+                        <div class="exbPic">
+                            <img src="imge/evbicc.jpg" height="100%" width="100%"  >
+                        </div>
+                        <h3>小米路由器 黑色</h3>
+                        <p class="ad">小而精致，精简出行</p>
+                        <div class="price"><div class="priceNum">59元</div><del>69元</del></div>
+                    </li>
+                    <li>
+                        <div class="exbPic">
+                            <img src="imge/evbicc.jpg" height="100%" width="100%"  >
+                        </div>
+                        <h3>小米路由器 黑色</h3>
+                        <p class="ad">小而精致，精简出行</p>
+                        <div class="price"><div class="priceNum">59元</div><del>69元</del></div>
+                    </li>
+                    <li>
+                        <div class="exbPic">
+                            <img src="imge/evbicc.jpg" height="100%" width="100%"  >
+                        </div>
+                        <h3>小米路由器 黑色</h3>
+                        <p class="ad">小而精致，精简出行</p>
+                        <div class="price"><div class="priceNum">59元</div><del>69元</del></div>
+                    </li>
+                    <li>
+                        <div class="exbPic">
+                            <img src="imge/evbicc.jpg" height="100%" width="100%"  >
+                        </div>
+                        <h3>小米路由器 黑色</h3>
+                        <p class="ad">小而精致，精简出行</p>
+                        <div class="price"><div class="priceNum">59元</div><del>69元</del></div>
+                    </li>
+                    <!-- 小盒子+浏览更多 -->
+                    
+                    <div class="smallbox">
+                        <span>
+                            <h3>米家电烤箱</h3>
+                            <p class="priceNum">279元</p>  
+                        </span>
+                        <span>
+                            <div>
+                                <img src="imge/kaoxiang.jpg" alt="" height="100%" width="100%">
+                            </div>
+                        </span>
+                    </div>
+                    <div class="smallbox">
+                        <span>
+                            <h2>浏览更多</h2>
+                            <p class="ad">热门</p>
+                        </span>
+                        <span class="leftarrow">
+                            <img src="imge/leftarrow.jpg" width="100%" height="100%"> 
+                        </span>
+                    </div>
+
+                </ul>
+            </span>
+            <div class="bannerPic"><img src="imge/thirdbar.jpg" height="100%" width="100%"></div>
+            <!-- 智能 -->
+            <h2>智能
+                <div class="Arrow"><span class="iconfont">&#xe62f</span></div>
+                <div class="Arrow"><span class="iconfont">&#xe62a</span></div> 
+            </h2>
+            <span class="ybigPic">
+                <li>
+                    <img src="imge/light.jpg" height="100%" width="100%"  >
+                </li>
+                <li>
+                     <img src="imge/slidecar.jpg" height="100%" width="100%"  >
+                </li>
+               
+            </span>
+            <span class="productPics">
+                <ul>
+                    <li>
+                        <div class="exbPic">
+                            <img src="imge/evbicc.jpg" height="100%" width="100%"  >
+                        </div>
+                        <h3>小米路由器 黑色</h3>
+                        <p class="ad">小而精致，精简出行</p>
+                        <div class="price"><div class="priceNum">59元</div><del>69元</del></div>
+                    </li>
+                    <li>
+                        <div class="exbPic">
+                            <img src="imge/evbicc.jpg" height="100%" width="100%"  >
+                        </div>
+                        <h3>小米路由器 黑色</h3>
+                        <p class="ad">小而精致，精简出行</p>
+                        <div class="price"><div class="priceNum">59元</div><del>69元</del></div>
+                    </li>
+                    <li>
+                        <div class="exbPic">
+                            <img src="imge/evbicc.jpg" height="100%" width="100%"  >
+                        </div>
+                        <h3>小米路由器 黑色</h3>
+                        <p class="ad">小而精致，精简出行</p>
+                        <div class="price"><div class="priceNum">59元</div><del>69元</del></div>
+                    </li>
+                    <li>
+                        <div class="exbPic">
+                            <img src="imge/evbicc.jpg" height="100%" width="100%"  >
+                        </div>
+                        <h3>小米路由器 黑色</h3>
+                        <p class="ad">小而精致，精简出行</p>
+                        <div class="price"><div class="priceNum">59元</div><del>69元</del></div>
+                    </li>
+                    <li>
+                        <div class="exbPic">
+                            <img src="imge/evbicc.jpg" height="100%" width="100%"  >
+                        </div>
+                        <h3>小米路由器 黑色</h3>
+                        <p class="ad">小而精致，精简出行</p>
+                        <div class="price"><div class="priceNum">59元</div><del>69元</del></div>
+                    </li>
+                    <li>
+                        <div class="exbPic">
+                            <img src="imge/evbicc.jpg" height="100%" width="100%"  >
+                        </div>
+                        <h3>小米路由器 黑色</h3>
+                        <p class="ad">小而精致，精简出行</p>
+                        <div class="price"><div class="priceNum">59元</div><del>69元</del></div>
+                    </li>
+                    <li>
+                        <div class="exbPic">
+                            <img src="imge/evbicc.jpg" height="100%" width="100%"  >
+                        </div>
+                        <h3>小米路由器 黑色</h3>
+                        <p class="ad">小而精致，精简出行</p>
+                        <div class="price"><div class="priceNum">59元</div><del>69元</del></div>
+                    </li>
+                    <!-- 小盒子+浏览更多 -->
+                    
+                    <div class="smallbox">
+                        <span>
+                            <h3>米家电烤箱</h3>
+                            <p class="priceNum">279元</p>  
+                        </span>
+                        <span>
+                            <div>
+                                <img src="imge/kaoxiang.jpg" alt="" height="100%" width="100%">
+                            </div>
+                        </span>
+                    </div>
+                    <div class="smallbox">
+                        <span>
+                            <h2>浏览更多</h2>
+                            <p class="ad">热门</p>
+                        </span>
+                        <span class="leftarrow">
+                            <img src="imge/leftarrow.jpg" width="100%" height="100%"> 
+                        </span>
+                    </div>
+
+                </ul>
+            </span>
+            <div class="bannerPic"><img src="imge/bannerzhineng.jpg" height="100%" width="100%"></div>
+            <!-- 搭配 -->
+            <h2>搭配
+                <div class="Arrow"><span class="iconfont">&#xe62f</span></div>
+                <div class="Arrow"><span class="iconfont">&#xe62a</span></div> 
+            </h2>
+            <span class="ybigPic">
+                <li>
+                    <img src="imge/balancecar.jpg" height="100%" width="100%"  >
+                </li>
+                <li>
+                     <img src="imge/tixudao.jpg" height="100%" width="100%"  >
+                </li>
+               
+            </span>
+            <span class="productPics">
+                <ul>
+                    <li>
+                        <div class="exbPic">
+                            <img src="imge/evbicc.jpg" height="100%" width="100%"  >
+                        </div>
+                        <h3>小米路由器 黑色</h3>
+                        <p class="ad">小而精致，精简出行</p>
+                        <div class="price"><div class="priceNum">59元</div><del>69元</del></div>
+                    </li>
+                    <li>
+                        <div class="exbPic">
+                            <img src="imge/evbicc.jpg" height="100%" width="100%"  >
+                        </div>
+                        <h3>小米路由器 黑色</h3>
+                        <p class="ad">小而精致，精简出行</p>
+                        <div class="price"><div class="priceNum">59元</div><del>69元</del></div>
+                    </li>
+                    <li>
+                        <div class="exbPic">
+                            <img src="imge/evbicc.jpg" height="100%" width="100%"  >
+                        </div>
+                        <h3>小米路由器 黑色</h3>
+                        <p class="ad">小而精致，精简出行</p>
+                        <div class="price"><div class="priceNum">59元</div><del>69元</del></div>
+                    </li>
+                    <li>
+                        <div class="exbPic">
+                            <img src="imge/evbicc.jpg" height="100%" width="100%"  >
+                        </div>
+                        <h3>小米路由器 黑色</h3>
+                        <p class="ad">小而精致，精简出行</p>
+                        <div class="price"><div class="priceNum">59元</div><del>69元</del></div>
+                    </li>
+                    <li>
+                        <div class="exbPic">
+                            <img src="imge/evbicc.jpg" height="100%" width="100%"  >
+                        </div>
+                        <h3>小米路由器 黑色</h3>
+                        <p class="ad">小而精致，精简出行</p>
+                        <div class="price"><div class="priceNum">59元</div><del>69元</del></div>
+                    </li>
+                    <li>
+                        <div class="exbPic">
+                            <img src="imge/evbicc.jpg" height="100%" width="100%"  >
+                        </div>
+                        <h3>小米路由器 黑色</h3>
+                        <p class="ad">小而精致，精简出行</p>
+                        <div class="price"><div class="priceNum">59元</div><del>69元</del></div>
+                    </li>
+                    <li>
+                        <div class="exbPic">
+                            <img src="imge/evbicc.jpg" height="100%" width="100%"  >
+                        </div>
+                        <h3>小米路由器 黑色</h3>
+                        <p class="ad">小而精致，精简出行</p>
+                        <div class="price"><div class="priceNum">59元</div><del>69元</del></div>
+                    </li>
+                    <!-- 小盒子+浏览更多 -->
+                    
+                    <div class="smallbox">
+                        <span>
+                            <h3>米家电烤箱</h3>
+                            <p class="priceNum">279元</p>  
+                        </span>
+                        <span>
+                            <div>
+                                <img src="imge/kaoxiang.jpg" alt="" height="100%" width="100%">
+                            </div>
+                        </span>
+                    </div>
+                    <div class="smallbox">
+                        <span>
+                            <h2>浏览更多</h2>
+                            <p class="ad">热门</p>
+                        </span>
+                        <span class="leftarrow">
+                            <img src="imge/leftarrow.jpg" width="100%" height="100%"> 
+                        </span>
+                    </div>
+
+                </ul>
+            </span>
+            <div class="bannerPic"><img src="imge/bannerSmartLife.jpg" height="100%" width="100%"></div>
+            <!-- 配件 -->
+            <h2>配件
+                <div class="Arrow"><span class="iconfont">&#xe62f</span></div>
+                <div class="Arrow"><span class="iconfont">&#xe62a</span></div> 
+            </h2>
+            <span class="ybigPic">
+                <li>
+                    <img src="imge/childeWatch.jpg" height="100%" width="100%"  >
+                </li>
+                <li>
+                     <img src="imge/washinghandmach.jpg" height="100%" width="100%"  >
+                </li>
+               
+            </span>
+            <span class="productPics">
+                <ul>
+                    <li>
+                        <div class="exbPic">
+                            <img src="imge/evbicc.jpg" height="100%" width="100%"  >
+                        </div>
+                        <h3>小米路由器 黑色</h3>
+                        <p class="ad">小而精致，精简出行</p>
+                        <div class="price"><div class="priceNum">59元</div><del>69元</del></div>
+                    </li>
+                    <li>
+                        <div class="exbPic">
+                            <img src="imge/evbicc.jpg" height="100%" width="100%"  >
+                        </div>
+                        <h3>小米路由器 黑色</h3>
+                        <p class="ad">小而精致，精简出行</p>
+                        <div class="price"><div class="priceNum">59元</div><del>69元</del></div>
+                    </li>
+                    <li>
+                        <div class="exbPic">
+                            <img src="imge/evbicc.jpg" height="100%" width="100%"  >
+                        </div>
+                        <h3>小米路由器 黑色</h3>
+                        <p class="ad">小而精致，精简出行</p>
+                        <div class="price"><div class="priceNum">59元</div><del>69元</del></div>
+                    </li>
+                    <li>
+                        <div class="exbPic">
+                            <img src="imge/evbicc.jpg" height="100%" width="100%"  >
+                        </div>
+                        <h3>小米路由器 黑色</h3>
+                        <p class="ad">小而精致，精简出行</p>
+                        <div class="price"><div class="priceNum">59元</div><del>69元</del></div>
+                    </li>
+                    <li>
+                        <div class="exbPic">
+                            <img src="imge/evbicc.jpg" height="100%" width="100%"  >
+                        </div>
+                        <h3>小米路由器 黑色</h3>
+                        <p class="ad">小而精致，精简出行</p>
+                        <div class="price"><div class="priceNum">59元</div><del>69元</del></div>
+                    </li>
+                    <li>
+                        <div class="exbPic">
+                            <img src="imge/evbicc.jpg" height="100%" width="100%"  >
+                        </div>
+                        <h3>小米路由器 黑色</h3>
+                        <p class="ad">小而精致，精简出行</p>
+                        <div class="price"><div class="priceNum">59元</div><del>69元</del></div>
+                    </li>
+                    <li>
+                        <div class="exbPic">
+                            <img src="imge/evbicc.jpg" height="100%" width="100%"  >
+                        </div>
+                        <h3>小米路由器 黑色</h3>
+                        <p class="ad">小而精致，精简出行</p>
+                        <div class="price"><div class="priceNum">59元</div><del>69元</del></div>
+                    </li>
+                    <!-- 小盒子+浏览更多 -->
+                    
+                    <div class="smallbox">
+                        <span>
+                            <h3>米家电烤箱</h3>
+                            <p class="priceNum">279元</p>  
+                        </span>
+                        <span>
+                            <div>
+                                <img src="imge/kaoxiang.jpg" alt="" height="100%" width="100%">
+                            </div>
+                        </span>
+                    </div>
+                    <div class="smallbox">
+                        <span>
+                            <h2>浏览更多</h2>
+                            <p class="ad">热门</p>
+                        </span>
+                        <span class="leftarrow">
+                            <img src="imge/leftarrow.jpg" width="100%" height="100%"> 
+                        </span>
+                    </div>
+
+                </ul>
+            </span>
+            <div class="bannerPic"><img src="imge/bannerstar.jpg" height="100%" width="100%"></div>
+            <!-- 周边 -->
+            <h2>周边
+                <div class="Arrow"><span class="iconfont">&#xe62f</span></div>
+                <div class="Arrow"><span class="iconfont">&#xe62a</span></div> 
+            </h2>
+            <span class="ybigPic">
+                <li>
+                    <img src="imge/cup.jpg" height="100%" width="100%"  >
+                </li>
+                <li>
+                     <img src="imge/bag.jpg" height="100%" width="100%"  >
+                </li>
+               
+            </span>
+            <span class="productPics">
+                <ul>
+                    <li>
+                        <div class="exbPic">
+                            <img src="imge/evbicc.jpg" height="100%" width="100%"  >
+                        </div>
+                        <h3>小米路由器 黑色</h3>
+                        <p class="ad">小而精致，精简出行</p>
+                        <div class="price"><div class="priceNum">59元</div><del>69元</del></div>
+                    </li>
+                    <li>
+                        <div class="exbPic">
+                            <img src="imge/evbicc.jpg" height="100%" width="100%"  >
+                        </div>
+                        <h3>小米路由器 黑色</h3>
+                        <p class="ad">小而精致，精简出行</p>
+                        <div class="price"><div class="priceNum">59元</div><del>69元</del></div>
+                    </li>
+                    <li>
+                        <div class="exbPic">
+                            <img src="imge/evbicc.jpg" height="100%" width="100%"  >
+                        </div>
+                        <h3>小米路由器 黑色</h3>
+                        <p class="ad">小而精致，精简出行</p>
+                        <div class="price"><div class="priceNum">59元</div><del>69元</del></div>
+                    </li>
+                    <li>
+                        <div class="exbPic">
+                            <img src="imge/evbicc.jpg" height="100%" width="100%"  >
+                        </div>
+                        <h3>小米路由器 黑色</h3>
+                        <p class="ad">小而精致，精简出行</p>
+                        <div class="price"><div class="priceNum">59元</div><del>69元</del></div>
+                    </li>
+                    <li>
+                        <div class="exbPic">
+                            <img src="imge/evbicc.jpg" height="100%" width="100%"  >
+                        </div>
+                        <h3>小米路由器 黑色</h3>
+                        <p class="ad">小而精致，精简出行</p>
+                        <div class="price"><div class="priceNum">59元</div><del>69元</del></div>
+                    </li>
+                    <li>
+                        <div class="exbPic">
+                            <img src="imge/evbicc.jpg" height="100%" width="100%"  >
+                        </div>
+                        <h3>小米路由器 黑色</h3>
+                        <p class="ad">小而精致，精简出行</p>
+                        <div class="price"><div class="priceNum">59元</div><del>69元</del></div>
+                    </li>
+                    <li>
+                        <div class="exbPic">
+                            <img src="imge/evbicc.jpg" height="100%" width="100%"  >
+                        </div>
+                        <h3>小米路由器 黑色</h3>
+                        <p class="ad">小而精致，精简出行</p>
+                        <div class="price"><div class="priceNum">59元</div><del>69元</del></div>
+                    </li>
+                    <!-- 小盒子+浏览更多 -->
+                    
+                    <div class="smallbox">
+                        <span>
+                            <h3>米家电烤箱</h3>
+                            <p class="priceNum">279元</p>  
+                        </span>
+                        <span>
+                            <div>
+                                <img src="imge/kaoxiang.jpg" alt="" height="100%" width="100%">
+                            </div>
+                        </span>
+                    </div>
+                    <div class="smallbox">
+                        <span>
+                            <h2>浏览更多</h2>
+                            <p class="ad">热门</p>
+                        </span>
+                        <span class="leftarrow">
+                            <img src="imge/leftarrow.jpg" width="100%" height="100%"> 
+                        </span>
+                    </div>
+
+                </ul>
+            </span>
+            <div class="bannerPic"><img src="imge/bannerpen.jpg" height="100%" width="100%"></div>
+            <!-- 视频 -->
+            <h2>视频
+                <div class="Arrow"><span class="iconfont">&#xe62f</span></div>
+                <div class="Arrow"><span class="iconfont">&#xe62a</span></div> 
+            </h2>
+            <div class="vedio">
+                <ul>
+                    <li>
+                        <div class="figure"><img src="imge/vediofigure.jpg" width="100%" height="100%"></div>
+                        <h3>Redmi10x 系列发布会</h3>   
+                    </li>
+                    <li>
+                        <div class="figure"><img src="imge/vediofigure.jpg" width="100%" height="100%"></div>
+                        <h3>Redmi10x 系列发布会</h3>   
+                    </li>
+                    <li>
+                        <div class="figure"><img src="imge/vediofigure.jpg" width="100%" height="100%"></div>
+                        <h3>Redmi10x 系列发布会</h3>   
+                    </li>
+                    <li>
+                        <div class="figure"><img src="imge/vediofigure.jpg" width="100%" height="100%"></div>
+                        <h3>Redmi10x 系列发布会</h3>   
+                    </li>
+                </ul>
+
+            </div>   
+        </div>            
+    </div>
+    </div>
+    <div class = footer>
+        <div class="footerService">
+            <span class="iconfont">&#xe60d</span><a href="#">预约维修服务</a><span>|</span>
+            <span class="iconfont">&#xe609</span><a href="#">七天无理由退货</a> <span>|</span>
+            <span class="iconfont">&#xe60a</span><a href="#">15天免费换货</a><span>|</span>
+            <span class="iconfont">&#xe60b</span><a href="#">满99元包邮</a><span>|</span>
+            <span class="iconfont">&#xe60c</span><a href="#">520余家售后网点</a>
+        </div>
+        <div class="serviceLink">
+            <div class="colink">
+                <dt>帮助中心</dt>
+                <dl><a href="#">账户管理</a></dl>
+                <dl><a href="#">购物指南</a></dl>
+                <dl><a href="#">订单操作</a></dl>
+            </div>
+            <div class="colink">
+                <dt>服务支持</dt>
+                <dl><a href="#">售后政策</a></dl>
+                <dl><a href="#">自助服务</a></dl>
+                <dl><a href="#">相关下载</a></dl>
+            </div>
+            <div class="colink">
+                <dt>线下门店</dt>
+                <dl><a href="#">小米之家</a></dl>
+                <dl><a href="#">服务网点</a></dl>
+                <dl><a href="#">授权体验店</a></dl>
+            </div>
+            <div class="colink">
+                <dt> 关于小米</dt>
+                <dl><a href="#">了解小米</a></dl>
+                <dl><a href="#">加入小米</a></dl>
+                <dl><a href="#">投资者关系</a></dl>
+                <dl><a href="#">企业社会责任</a></dl>
+                <dl><a href="#">廉清举报</a></dl>
+            </div>
+            <div class="colink">
+                <dt>关注我们</dt>
+                <dl><a href="#">新浪微博</a></dl>
+                <dl><a href="#">官方微信</a></dl>
+                <dl><a href="#">联系我们</a></dl>
+                <dl><a href="#">公益基金会</a></dl>
+            </div>
+            <div class="colink">
+                <dt>特色服务</dt>
+                <dl><a href="#">F码通道</a></dl>
+                <dl><a href="#">礼物码</a></dl>
+                <dl><a href="#">防伪查询</a></dl>
+            </div>
+            <div class="contact">
+                <p>400-100-5678</p>
+                <span>8:00-18:00（仅收市电话费）</span>
+                <div class="chatbox">人工客服</div>
+                <span style="float: left; width: 90px; height: 20px; margin-left: 51px;">关注小米：</span><span class="iconfont">&#xe625</span><span class="iconfont">&#xe66c</span>
+            </div>
+        </div>
+        <div class="siteinfo">
+            <div class="siteinfoContainer">
+                <div class="milogo">
+                    <img src="imge/home1.jpg" width="100%" height="100%">
+                </div>
+                <div class="fontinfo">
+                    <p>
+                       <a href="#">小米商城</a><span>|</span>
+                        <a href="#">MIUI</a><span>|</span>
+                        <a href="#">米家</a><span>|</span>
+                        <a href="#">米聊</a><span>|</span>
+                        <a href="#">多看</a><span>|</span>
+                        <a href="#">游戏</a><span>|</span>
+                        <a href="#">政企服务</a><span>|</span>
+                        <a href="#">小米天猫店</a><span>|</span>
+                        <a href="#">小米集团隐私政策</a><span>|</span>
+                        <a href="#">小米公司儿童信息保护规则</a><span>|</span>
+                        <a href="#">小米商城隐私政策</a><span>|</span>
+                        <a href="#">小米商城用户协议</a><span>|</span>
+                        <a href="#">问题反馈</a><span>|</span>
+                        <a href="#">Select Location</a> 
+                    </p>
+                    <p>
+                        <a href="#">北京互联网法院法律服务工作站</a><span>|</span>
+                        <a href="#">中国消费者协会</a><span>|</span>
+                        <a href="#">北京市消费者协会</a><span>|</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
